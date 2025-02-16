@@ -38,7 +38,7 @@ public class ObjetoController : ControllerBase
     [HttpGet("{id}")]
     public IActionResult BuscaObjetoId(int id)
     {
-        var objeto = _context.objetos.FirstOrDefault(obj => obj.Id == id);
+        var objeto = _context.objetos.FirstOrDefault(obj => obj.ObjetoId == id);
         if (objeto == null) return NotFound();
         return Ok(objeto);
     }
@@ -46,7 +46,7 @@ public class ObjetoController : ControllerBase
     [HttpPut]
     public IActionResult AtualizaObjeto(int id, [FromBody] CreateObjetoDto objetoDto)
     {
-        var objeto = _context.objetos.FirstOrDefault(obj => obj.Id == id);
+        var objeto = _context.objetos.FirstOrDefault(obj => obj.ObjetoId == id);
         if (objeto == null) return NotFound();
         _mapper.Map(objetoDto, objeto);
         _context.SaveChanges();
@@ -56,7 +56,7 @@ public class ObjetoController : ControllerBase
     [HttpDelete]
     public IActionResult DeleteObjeto(int id)
     {
-        var objeto = _context.objetos.FirstOrDefault(obj => obj.Id == id);
+        var objeto = _context.objetos.FirstOrDefault(obj => obj.ObjetoId == id);
         if (objeto == null) return NotFound();
         _context.Remove(objeto);
         _context.SaveChanges();

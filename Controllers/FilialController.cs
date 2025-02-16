@@ -46,7 +46,7 @@ public class FilialController : ControllerBase
     [HttpPut]
     public IActionResult AtualizaFilial(int id, [FromBody] CreateFilialDto filialDto)
     {
-        var filial = _context.filiais.FirstOrDefault(fil => fil.Id == id);
+        var filial = _context.filiais.FirstOrDefault(fil => fil.FilialId == id);
         if (filial == null) return NotFound();
         _mapper.Map(filialDto, filial);
         _context.SaveChanges();
@@ -56,7 +56,7 @@ public class FilialController : ControllerBase
     [HttpDelete]
     public IActionResult Deletefilial(int id)
     {
-        var filial = _context.filiais.FirstOrDefault(fil => fil.Id == id);
+        var filial = _context.filiais.FirstOrDefault(fil => fil.FilialId == id);
         if (filial == null) return NotFound();
         _context.Remove(filial);
         _context.SaveChanges();

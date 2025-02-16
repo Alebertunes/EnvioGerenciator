@@ -8,3 +8,5 @@ public class ReadFilialDto
     public int Numero { get; set; }
 
 }
+
+

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnvioGerenciator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5af65e0299c20b170611396525148bfe163c1184")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnvioGerenciator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnvioGerenciator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

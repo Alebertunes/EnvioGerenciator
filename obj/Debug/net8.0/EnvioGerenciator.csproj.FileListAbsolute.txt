@@ -127,3 +127,4 @@ C:\Users\alexa\Documents\EnvioGerenciator\obj\Debug\net8.0\refint\EnvioGerenciat
 C:\Users\alexa\Documents\EnvioGerenciator\obj\Debug\net8.0\EnvioGerenciator.pdb
 C:\Users\alexa\Documents\EnvioGerenciator\obj\Debug\net8.0\EnvioGerenciator.genruntimeconfig.cache
 C:\Users\alexa\Documents\EnvioGerenciator\obj\Debug\net8.0\ref\EnvioGerenciator.dll
+C:\Users\alexa\Documents\EnvioGerenciator\obj\Debug\net8.0\EnvioGerenciator.sourcelink.json

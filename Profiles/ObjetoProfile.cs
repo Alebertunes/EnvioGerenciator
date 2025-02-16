@@ -11,5 +11,6 @@ public class ObjetoProfile : Profile
         CreateMap<CreateObjetoDto, Objeto>();
         CreateMap<Objeto, CreateObjetoDto>();
         CreateMap<ReadObjetoDto, Objeto>();
+        CreateMap<Objeto, ReadObjetoDto>();
     }
 }

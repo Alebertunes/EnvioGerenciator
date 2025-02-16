@@ -2,6 +2,7 @@
 using EnviGerenciator.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 
@@ -10,9 +11,11 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace EnvioGerenciator.Migrations
 {
     [DbContext(typeof(ObjetoContext))]
-    partial class ObjetoContextModelSnapshot : ModelSnapshot
+    [Migration("20250216030934_Relação filial Remessas")]
+    partial class RelaçãofilialRemessas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
